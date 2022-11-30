@@ -1,5 +1,5 @@
 # Chipper: Chip In for Wholesale Prices
-*Link To Video Demo:* <a href="https://youtu.be/ogt2H16bUTs"> https://youtu.be/ogt2H16bUTs </a>
+*Link To Video Demo:* <a href="https://youtu.be/ogt2H16bUTs"> https://youtu.be/ogt2H16bUTs </a> <br>
                       <a href="https://youtu.be/JxFEr9T0f0g">https://youtu.be/JxFEr9T0f0g</a>
 
 <p>
