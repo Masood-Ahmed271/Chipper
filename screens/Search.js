@@ -2,8 +2,6 @@ import {
   Text,
   View,
   TextInput,
-  Button,
-  Alert,
   TouchableOpacity,
   ScrollView,
   Image
@@ -12,10 +10,11 @@ import React, { useState, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import BuyerItem from "../components/buyerHome/BuyerItem";
 import BuyerBottomTabs from "../components/buyerHome/BuyerBottomTabs";
-import {firebase} from "../config";
+import { firebase } from "../config";
 import logo from "../assets/logo-removebg.png";
 
-export default function Search({ route, navigation }) {
+export default function Search({ navigation }) {
+
   const [items, setItems] = useState([]);
   const productsRef = firebase.firestore().collection("products");
 
@@ -74,7 +73,7 @@ export default function Search({ route, navigation }) {
 
   return (
     <View style={{ flex: 1 }}>
-    <TouchableOpacity
+      <TouchableOpacity
         style={{
           flexDirection: "row",
           justifyContent: "center",
@@ -92,8 +91,8 @@ export default function Search({ route, navigation }) {
         />
         <Text style={{ fontWeight: "bold", fontSize: 24 }}>Chipper</Text>
       </TouchableOpacity>
-      <View style={{alignItems: 'center', justifyContent: 'center'}}>
-        <Text style={{marginTop: '3%', fontWeight: 'bold', fontSize: 32}}>Search</Text>
+      <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ marginTop: '3%', fontWeight: 'bold', fontSize: 32 }}>Search</Text>
       </View>
       <View style={{ alignItems: "center", flex: 1, marginTop: '10%' }}>
         <Controller

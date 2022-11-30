@@ -1,4 +1,9 @@
-import { View, Text, ScrollView, Image } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  ß
+} from "react-native";
 import React, { useEffect, useState } from "react";
 import HomeHeader from "../components/buyerHome/HomeHeader";
 import ItemSlider from "../components/buyerHome/ItemSlider";
@@ -7,6 +12,7 @@ import ItemCatalog from "../components/buyerHome/ItemCatalog";
 import * as Location from "expo-location";
 
 export default function BuyerHome({ navigation }) {
+  
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
   const [city, setCity] = useState("");
@@ -26,12 +32,12 @@ export default function BuyerHome({ navigation }) {
       setCity(address[0].city)
     })();
   }, []);
-  
+
   return (
     <View style={{ flex: 1 }}>
       <ScrollView>
         <View style={{ flex: 1 }}>
-          <HomeHeader cityLocation={city}/>
+          <HomeHeader cityLocation={city} />
           <View>
             <Text
               style={{

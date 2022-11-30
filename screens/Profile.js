@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
   View,
   Image,
-  Alert,
   ScrollView,
 } from "react-native";
 import * as ImagePicker from "expo-image-picker";
@@ -18,7 +17,6 @@ import {
 } from "firebase/storage";
 
 import { firebase } from "../config";
-import profilePhoto from "../assets/profile-photo.png";
 import BuyerBottomTabs from "../components/buyerHome/BuyerBottomTabs";
 import SellerBottomTabs from "../components/sellerHome/SellerBottomTabs";
 import logo from "../assets/logo-removebg.png";
@@ -268,11 +266,11 @@ const BuyerProfile = ({ navigation }) => {
                 Change Password
               </Text>
             </TouchableOpacity>
-            <View style={{flexDirection: 'row', alignItems: 'center', marginTop: '10%'}}>
-            <Image source={logo} style={{height: 50, width: 50, marginRight: '3%'}} />
-            <Image source={chipper} style={{height: 31, width: 122, marginTop: '2%'}} />
-          </View>
-          <Text style={{marginTop: '2%', fontWeight: 'bold'}}>Version 1.0.0</Text>
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: '10%' }}>
+              <Image source={logo} style={{ height: 50, width: 50, marginRight: '3%' }} />
+              <Image source={chipper} style={{ height: 31, width: 122, marginTop: '2%' }} />
+            </View>
+            <Text style={{ marginTop: '2%', fontWeight: 'bold' }}>Version 1.0.0</Text>
           </View>
         </SafeAreaView>
       </ScrollView>

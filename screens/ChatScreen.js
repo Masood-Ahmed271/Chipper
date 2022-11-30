@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     StyleSheet,
 } from 'react-native';
@@ -9,7 +9,7 @@ Icon.loadFont().then();
 
 
 
-const ChatScreen = ({ user, route }) => {
+const ChatScreen = ({ route }) => {
     const [messages, setMessages] = useState([]);
     const { uid } = route.params;
 

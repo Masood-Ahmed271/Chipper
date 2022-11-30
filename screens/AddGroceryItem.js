@@ -1,11 +1,19 @@
-import { View, Text, TextInput, TouchableOpacity, Alert, Image } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  Alert,
+  Image
+} from "react-native";
 import React, { useState, useEffect } from "react";
-// import { useForm, Controller } from "react-hook-form";
+
 import SellerBottomTabs from "../components/sellerHome/SellerBottomTabs";
 import { firebase } from "../config";
 import logo from "../assets/logo-removebg.png";
 
 const AddGroceryItem = ({ navigation }) => {
+   
   const [productName, setProductName] = useState("");
   const [price, setPrice] = useState();
   const [quantityAvailable, setQuantityAvailable] = useState();
@@ -62,7 +70,7 @@ const AddGroceryItem = ({ navigation }) => {
 
   return (
     <View style={{ flex: 1 }}>
-          <TouchableOpacity
+      <TouchableOpacity
         style={{
           flexDirection: "row",
           justifyContent: "center",

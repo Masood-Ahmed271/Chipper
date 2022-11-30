@@ -13,7 +13,6 @@ import {
 import {
   CardField,
   useConfirmPayment,
-  CardForm,
 } from "@stripe/stripe-react-native";
 import { useDispatch, useSelector } from "react-redux";
 import { firebase } from "../config";
@@ -24,6 +23,7 @@ import logo from "../assets/logo-removebg.png";
 const API_URL = "http://10.68.2.133:8006";
 
 const StripeApp = ({ route, navigation }) => {
+
   const cart = useSelector((state) => state.cart.cart);
   const dispatch = useDispatch();
   const [email, setEmail] = useState();
@@ -31,6 +31,7 @@ const StripeApp = ({ route, navigation }) => {
   const [address, setAddress] = useState("");
   const [mobile, setMobile] = useState("");
   const { confirmPayment, loading } = useConfirmPayment();
+
   let orderID = "";
   var today = new Date();
   var dd = String(today.getDate()).padStart(2, "0");

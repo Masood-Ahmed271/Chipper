@@ -56,13 +56,13 @@ export default function ManageOrder({ route, navigation }) {
           .catch((error) => console.log(error));
       })
 
-        firebase
-          .firestore()
-          .collection("orders")
-          .doc(route.params.item.id)
-          .delete()
-          .then(handleCancel())
-          .catch((error) => console.log(error));
+    firebase
+      .firestore()
+      .collection("orders")
+      .doc(route.params.item.id)
+      .delete()
+      .then(handleCancel())
+      .catch((error) => console.log(error));
   };
 
   const handleCancel = () => {
@@ -71,8 +71,8 @@ export default function ManageOrder({ route, navigation }) {
   }
 
   return (
-    <View style={{ flex: 1,  }}>
-        <TouchableOpacity
+    <View style={{ flex: 1, }}>
+      <TouchableOpacity
         style={{
           flexDirection: "row",
           justifyContent: "center",

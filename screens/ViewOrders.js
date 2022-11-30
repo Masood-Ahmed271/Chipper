@@ -1,4 +1,10 @@
-import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  Image,
+  TouchableOpacity
+} from "react-native";
 import React, { useState, useEffect } from "react";
 import { firebase } from "../config";
 import BuyerBottomTabs from "../components/buyerHome/BuyerBottomTabs";
@@ -41,7 +47,7 @@ export default function ViewOrders({ navigation }) {
 
   return (
     <View style={{ flex: 1, }}>
-    <TouchableOpacity
+      <TouchableOpacity
         style={{
           flexDirection: "row",
           justifyContent: "center",

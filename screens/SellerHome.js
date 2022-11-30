@@ -1,5 +1,9 @@
-import { View, Text, ScrollView } from "react-native";
-import React, {useEffect, useState} from "react";
+import {
+  View,
+  Text,
+  ScrollView
+} from "react-native";
+import React, { useEffect, useState } from "react";
 import HomeHeader from "../components/sellerHome/HomeHeader";
 import ItemSlider from "../components/sellerHome/ItemSlider";
 import BottomTabs from "../components/sellerHome/SellerBottomTabs";
@@ -7,8 +11,10 @@ import ItemCatalog from "../components/sellerHome/ItemCatalog";
 import * as Location from "expo-location";
 
 export default function SellerHome({ navigation }) {
+
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
+  
   const [city, setCity] = useState("");
 
   useEffect(() => {
@@ -31,7 +37,7 @@ export default function SellerHome({ navigation }) {
     <View style={{ flex: 1 }}>
       <ScrollView>
         <View style={{ flex: 1 }}>
-          <HomeHeader cityLocation={city}/>
+          <HomeHeader cityLocation={city} />
           <View>
             <Text
               style={{

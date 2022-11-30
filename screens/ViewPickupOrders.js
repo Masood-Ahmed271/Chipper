@@ -1,10 +1,19 @@
-import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  Image,
+  TouchableOpacity
+} from "react-native";
 import React, { useState, useEffect } from "react";
 import { firebase } from "../config";
+
+
 import SellerBottomTabs from "../components/sellerHome/SellerBottomTabs";
 import logo from "../assets/logo-removebg.png";
 
 export default function ViewPickupOrders({ navigation }) {
+  
   const [orders, setOrders] = useState([]);
   const ordersRef = firebase.firestore().collection("orders");
 

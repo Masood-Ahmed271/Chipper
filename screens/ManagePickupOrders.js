@@ -35,8 +35,8 @@ export default function ManagePickupOrders({ route, navigation }) {
   };
 
   return (
-    <View style={{ flex: 1,  }}>
-          <TouchableOpacity
+    <View style={{ flex: 1, }}>
+      <TouchableOpacity
         style={{
           flexDirection: "row",
           justifyContent: "center",

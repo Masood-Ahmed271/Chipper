@@ -1,7 +1,6 @@
 import {
   View,
   Text,
-  ScrollView,
   FlatList,
   TextInput,
   TouchableOpacity,
@@ -65,8 +64,8 @@ const ChatBot = ({ navigation }) => {
         />
         <Text style={{ fontWeight: "bold", fontSize: 24 }}>Chipper</Text>
       </TouchableOpacity>
-      <View style={{alignItems: 'center', justifyContent: 'center'}}>
-        <Text style={{marginTop: '3%', fontWeight: 'bold', fontSize: 32}}>ChatBot</Text>
+      <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ marginTop: '3%', fontWeight: 'bold', fontSize: 32 }}>ChatBot</Text>
       </View>
       <View style={{ flex: 1 }}>
         <FlatList

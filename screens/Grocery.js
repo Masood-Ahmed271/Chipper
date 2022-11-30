@@ -4,7 +4,6 @@ import {
   Image,
   ScrollView,
   TouchableOpacity,
-  Alert,
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import BuyerBottomTabs from "../components/buyerHome/BuyerBottomTabs";
@@ -16,6 +15,8 @@ import {
 } from "../redux/cartReducer";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import logo from "../assets/logo-removebg.png";
+
+
 const API_URL = "http://10.68.11.73:8004";
 
 const Grocery = ({ navigation }) => {
