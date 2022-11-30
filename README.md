@@ -67,6 +67,7 @@ Email: 'u3583070@connect.hku.hk'<br>
 - Run `yarn start` or `npm start` to start the application.
   - Just press  `a` to run on Android emulator and `i` to run on the IOS emulator. (Note: You should have a setup emulator before)
 - To run the backend, `cd server` and `nodemon index`
+- Please add your own firebase configuration to run the application in config.js
 
 ## Features
 
