@@ -1,13 +1,14 @@
 import {
   View,
   TouchableOpacity,
-  ScrollView
+  ScrollView,
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import BuyerItem from "./BuyerItem";
 import { firebase } from '../../config';
 
 export default function ItemSlider() {
+  
   const [items, setItems] = useState([]);
   const productsRef = firebase.firestore().collection("products");
 

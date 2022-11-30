@@ -4,24 +4,27 @@ import {
   TouchableOpacity,
   TextInput,
   StyleSheet,
-  Image
-} from 'react-native'
-import React, { useState } from 'react'
-import { firebase } from '../../config'
-import { ScrollView } from 'react-native'
+  Image,
+} from 'react-native';
+import React, { useState } from 'react';
+import { firebase } from '../../config';
+import { ScrollView } from 'react-native';
 import logo from "../../assets/logo-removebg.png";
 import chipper from "../../assets/chipper.png";
 import slogan from "../../assets/slogan.png";
 import { useNavigation } from "@react-navigation/native";
 
 const Registration = () => {
+
   const navigation = useNavigation();
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
 
   registerUser = async (email, password, firstName, lastName) => {
+
     await firebase.auth().createUserWithEmailAndPassword(email, password)
       .then(() => {
         firebase.firestore().collection("users")
@@ -36,7 +39,7 @@ const Registration = () => {
       })
       .catch((error) => {
         alert(error)
-      })
+      });
   }
 
 
@@ -104,10 +107,10 @@ const Registration = () => {
         </TouchableOpacity>
       </View>
     </ScrollView>
-  )
-}
+  );
+};
 
-export default Registration
+export default Registration;
 
 const styles = StyleSheet.create({
   container: {

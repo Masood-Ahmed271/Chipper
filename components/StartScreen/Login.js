@@ -15,7 +15,9 @@ import chipper from "../../assets/chipper.png";
 import slogan from "../../assets/slogan.png";
 
 const Login = () => {
+
   const navigation = useNavigation();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -29,6 +31,7 @@ const Login = () => {
 
   // forget password
   const forgetPassword = () => {
+
     firebase
       .auth()
       .sendPasswordResetEmail(email)
@@ -38,6 +41,7 @@ const Login = () => {
       .catch((error) => {
         alert(error);
       });
+      
   };
 
   return (

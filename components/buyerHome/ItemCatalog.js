@@ -7,6 +7,7 @@ import Item from "./BuyerItem";
 import { firebase } from "../../config";
 
 export default function ItemCatalog() {
+  
   const [items, setItems] = useState([]);
   const productsRef = firebase.firestore().collection("products");
 

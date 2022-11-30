@@ -2,11 +2,12 @@ import React from "react";
 import {
   View,
   Text,
-  TouchableOpacity
+  TouchableOpacity,
 } from "react-native";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 export default function BuyerBottomTabs({ navigation }) {
+
   return (
     <View
       style={{
@@ -24,9 +25,11 @@ export default function BuyerBottomTabs({ navigation }) {
       <Icon icon="user" text="Account" navigation={navigation} pageName='Profile' />
     </View>
   );
+
 }
 
 const Icon = (props) => (
+  
   <TouchableOpacity
     onPress={() => { props.navigation.navigate(props.pageName, { whichProfile: 'buyer' }) }}
   >

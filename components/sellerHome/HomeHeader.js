@@ -2,7 +2,7 @@ import {
   View,
   Text,
   TouchableOpacity,
-  Image
+  Image,
 } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import Ionicons from "react-native-vector-icons/Ionicons";
@@ -11,7 +11,9 @@ import { useNavigation } from '@react-navigation/native';
 import logo from '../../assets/logo-removebg.png';
 
 export default function HomeHeader(props) {
+
   const navigation = useNavigation();
+
   const [name, setName] = useState([]);
 
   useEffect(() => {
@@ -24,7 +26,7 @@ export default function HomeHeader(props) {
           console.log('does not exist')
         }
       })
-  }, [])
+  }, []);
 
   return (
     <View>
@@ -76,5 +78,5 @@ export default function HomeHeader(props) {
         </View>
       </View>
     </View>
-  )
+  );
 }

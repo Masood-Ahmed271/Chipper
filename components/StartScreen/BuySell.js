@@ -11,6 +11,7 @@ import chipper from "../../assets/chipper.png";
 import slogan from "../../assets/slogan.png";
 
 const BuySell = ({ navigation }) => {
+  
   return (
     <View style={{ marginTop: '20%' }}>
       <View

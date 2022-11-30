@@ -2,11 +2,12 @@ import {
   View,
   Text,
   Image
-} from 'react-native'
-import React from 'react'
-import logoNoBackground from '../../assets/logo-removebg.png'
+} from 'react-native';
+import React from 'react';
+import logoNoBackground from '../../assets/logo-removebg.png';
 
 const Header = (props) => {
+
   return (
     <View style={{ marginLeft: 15, backgroundColor: '#000', flexDirection: 'row', alignItems: 'center', textAlign: 'center', justifyContent: 'center' }}>
       <Image
@@ -17,7 +18,8 @@ const Header = (props) => {
         {props.name}
       </Text>
     </View>
-  )
-}
+  );
 
-export default Header
+};
+
+export default Header;
