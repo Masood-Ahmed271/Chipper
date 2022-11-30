@@ -4,7 +4,6 @@ import {
   TouchableOpacity,
   Image,
   Button,
-  Alert,
 } from "react-native";
 import React from "react";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";

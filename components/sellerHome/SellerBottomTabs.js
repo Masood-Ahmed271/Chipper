@@ -1,8 +1,12 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity
+} from "react-native";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
-export default function BuyerBottomTabs({navigation}) {
+export default function BuyerBottomTabs({ navigation }) {
   return (
     <View
       style={{
@@ -21,7 +25,7 @@ export default function BuyerBottomTabs({navigation}) {
 
 const Icon = (props) => (
   <TouchableOpacity
-  onPress={() => {props.navigation.navigate(props.pageName, {whichProfile: 'seller'})}}
+    onPress={() => { props.navigation.navigate(props.pageName, { whichProfile: 'seller' }) }}
   >
     <View>
       <FontAwesome5

@@ -1,4 +1,9 @@
-import { View, Text, TouchableOpacity, Image } from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Image
+} from 'react-native';
 import React, { useState, useEffect } from 'react';
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { firebase } from '../../config';
@@ -11,19 +16,19 @@ export default function HomeHeader(props) {
 
   useEffect(() => {
     firebase.firestore().collection("users").doc(firebase.auth().currentUser.uid).get()
-    .then((snapshot) =>{
-      if(snapshot.exists){
+      .then((snapshot) => {
+        if (snapshot.exists) {
           setName(snapshot.data())
-      }
-      else {
-        console.log('does not exist')
-      }
-  })
+        }
+        else {
+          console.log('does not exist')
+        }
+      })
   }, [])
 
   return (
     <View>
-    <TouchableOpacity
+      <TouchableOpacity
         style={{
           flexDirection: "row",
           justifyContent: "center",
@@ -41,35 +46,35 @@ export default function HomeHeader(props) {
         />
         <Text style={{ fontWeight: "bold", fontSize: 24 }}>Chipper</Text>
       </TouchableOpacity>
-          <View>
-      <Text
-        style={{
-          fontFamily: "Roboto",
-          marginLeft: "5%",
-          fontSize: 30,
-          marginTop: "3%",
-        }}
-      >
-        Good Morning, {name.firstName}
-      </Text>
-      <View
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-          paddingLeft: "4%",
-          paddingTop: "1%",
-        }}
-      >
-        <Ionicons
-          name="location-sharp"
-          size={24}
-          style={{ color: "#B2B2B2" }}
-        />
-        <Text style={{ fontFamily: "Roboto", fontSize: 18, color: "#B2B2B2" }}>
-          {props.cityLocation}
+      <View>
+        <Text
+          style={{
+            fontFamily: "Roboto",
+            marginLeft: "5%",
+            fontSize: 30,
+            marginTop: "3%",
+          }}
+        >
+          Good Morning, {name.firstName}
         </Text>
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            paddingLeft: "4%",
+            paddingTop: "1%",
+          }}
+        >
+          <Ionicons
+            name="location-sharp"
+            size={24}
+            style={{ color: "#B2B2B2" }}
+          />
+          <Text style={{ fontFamily: "Roboto", fontSize: 18, color: "#B2B2B2" }}>
+            {props.cityLocation}
+          </Text>
+        </View>
       </View>
-    </View>
     </View>
   )
 }

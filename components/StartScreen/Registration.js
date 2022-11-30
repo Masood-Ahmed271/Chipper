@@ -1,4 +1,11 @@
-import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native'
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  TextInput,
+  StyleSheet,
+  Image
+} from 'react-native'
 import React, { useState } from 'react'
 import { firebase } from '../../config'
 import { ScrollView } from 'react-native'
@@ -36,7 +43,7 @@ const Registration = () => {
   return (
     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
       <View style={styles.container}>
-      <View
+        <View
           style={{
             flexDirection: "row",
             alignItems: "center",
@@ -49,7 +56,7 @@ const Registration = () => {
           />
           <Image source={chipper} style={{ marginTop: "3%" }} />
         </View>
-        <View style={{marginBottom: '10%'}}>
+        <View style={{ marginBottom: '10%' }}>
           <Image source={slogan} />
         </View>
         <Text style={{ fontWeight: 'bold', fontSize: 30, }}>

@@ -1,4 +1,7 @@
-import { View, Text, TouchableOpacity, Image, ScrollView } from "react-native";
+import {
+  View,
+  TouchableOpacity,
+} from "react-native";
 import React, { useState, useEffect } from "react";
 import Item from "./BuyerItem";
 import { firebase } from "../../config";

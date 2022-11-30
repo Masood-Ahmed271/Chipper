@@ -2,7 +2,6 @@ import {
   View,
   Text,
   StyleSheet,
-  Button,
   TouchableOpacity,
   Image,
 } from "react-native";
@@ -13,7 +12,7 @@ import slogan from "../../assets/slogan.png";
 
 const BuySell = ({ navigation }) => {
   return (
-    <View style={{marginTop: '20%'}}>
+    <View style={{ marginTop: '20%' }}>
       <View
         style={{
           flexDirection: "row",
@@ -26,7 +25,7 @@ const BuySell = ({ navigation }) => {
           source={logo}
           style={{ width: 75, height: 75, marginRight: "5%" }}
         />
-        <Image source={chipper} style={{ marginTop: "3%",  }} />
+        <Image source={chipper} style={{ marginTop: "3%", }} />
       </View>
       <View style={{ marginBottom: "15%", marginLeft: '20%' }}>
         <Image source={slogan} />

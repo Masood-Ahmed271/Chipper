@@ -1,4 +1,8 @@
-import { View, Text, Image } from 'react-native'
+import {
+  View,
+  Text,
+  Image
+} from 'react-native'
 import React from 'react'
 import logoNoBackground from '../../assets/logo-removebg.png'
 

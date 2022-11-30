@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity
+} from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { firebase } from "../../config";
 import logo from "../../assets/logo-removebg.png";
@@ -11,14 +16,14 @@ export default function HomeHeader(props) {
 
   useEffect(() => {
     firebase.firestore().collection("users").doc(firebase.auth().currentUser.uid).get()
-    .then((snapshot) =>{
-      if(snapshot.exists){
+      .then((snapshot) => {
+        if (snapshot.exists) {
           setName(snapshot.data())
-      }
-      else {
-        console.log('does not exist')
-      }
-  })
+        }
+        else {
+          console.log('does not exist')
+        }
+      })
   }, [])
 
   return (

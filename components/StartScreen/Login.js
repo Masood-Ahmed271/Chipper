@@ -56,7 +56,7 @@ const Login = () => {
           />
           <Image source={chipper} style={{ marginTop: "3%" }} />
         </View>
-        <View style={{marginBottom: '15%'}}>
+        <View style={{ marginBottom: '15%' }}>
           <Image source={slogan} />
         </View>
         <Text style={{ fontWeight: "bold", fontSize: 30 }}>Login</Text>

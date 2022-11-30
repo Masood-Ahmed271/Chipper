@@ -1,7 +1,11 @@
-import { View, Text, TouchableOpacity, Image, ScrollView } from "react-native";
-import React, {useState, useEffect} from "react";
+import {
+  View,
+  TouchableOpacity,
+  ScrollView
+} from "react-native";
+import React, { useState, useEffect } from "react";
 import SellerItem from "./SellerItem";
-import {firebase} from '../../config';
+import { firebase } from '../../config';
 
 export default function ItemSlider() {
   const [items, setItems] = useState([]);
