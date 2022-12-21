@@ -83,6 +83,13 @@ Email: 'u3583070@connect.hku.hk'<br>
 - Chat Function allows users to chat with other users in their area. 
 - An AI chatbot that will reply to your queries related to the purchase
 
+## UI/UX
+
+<img width="1082" alt="Screenshot 2022-12-21 at 5 14 36 PM" src="https://user-images.githubusercontent.com/63158543/208868531-1997abe7-7995-48cc-9d8e-7cdbdd2670bf.png">
+
+<img width="1074" alt="Screenshot 2022-12-21 at 5 14 13 PM" src="https://user-images.githubusercontent.com/63158543/208868564-92352c3f-a58c-49f1-bdad-d991e6d39e69.png">
+
+
 ## Publishing
 
 - Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.dev/distribution/app-stores/).
@@ -94,5 +101,12 @@ Email: 'u3583070@connect.hku.hk'<br>
 - See what API and components are [available in the React runtimes](https://docs.expo.dev/versions/latest/).
 - Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
 
+## Feedback
+
+Pull requests are welcome. For feedback and suggestions, please reach out to Group 37
+
+## License
+
+COMP3330 Group 37 2022 © The University of Hong Kong
 
 ### *Stay Happy and Keep Smiling :)*
